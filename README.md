@@ -1,1 +1,0 @@
-https://jan-web.github.io/rsschool-cv/cv
