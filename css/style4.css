@@ -13,7 +13,7 @@
 }
 
 .space {
-  min-height: 30px;
+  min-height: 1px;
 }
 
 .header__top-wrapper {
@@ -24,8 +24,8 @@
   /* padding-bottom: 200px; */
 }
 .header__top-img {
-  margin-right: 72px;
-  width: 162px;
+  margin-right: 20px;
+  width: 150px;
 }
 
 .project__title {
@@ -40,9 +40,6 @@
   color: #888;
 }
 
-.print-columns h2 {
-  font-size: 1.8em;
-}
 
 html {
   box-sizing: border-box;
@@ -97,7 +94,7 @@ header {
   position: sticky;
   top: -11rem;
   z-index: 256;
-  height: 14rem;
+  height: 12rem;
   display: block;
   margin: 0;
   padding: 1rem 0;
@@ -135,13 +132,13 @@ header h1 {
   /* margin: 0 auto; */
   /* transform: translateX(-50%); */
   /* font-size: inherit; */
-  /* text-align: center; */
+  text-align: center;
   margin-top: -20px;
 }
 
 
 header h1 .name {
-  font-size: 2.3rem;
+  font-size: 3rem;
   line-height: 3rem;
   font-weight: 400;
 }
@@ -162,8 +159,6 @@ header nav {
   transform: translateX(-50%);
   white-space: nowrap;
   line-height: 1rem;
-  margin-left: -252px;
-  padding-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -255,15 +250,15 @@ footer {
   position: relative;
   display: flex;
   padding: 0 0.5rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   white-space: nowrap;
   background-color: var(--color-main);
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-align: center;
   vertical-align: middle;
-  font-size: 1.1rem;
+  font-size: 1.625rem;
   line-height: 2rem;
 }
 
@@ -274,15 +269,13 @@ footer>* {
 
 footer>*:last-child {
   flex: 0 1 10rem;
-  padding-left: 34px;
 }
 
 
 footer .social {
-  /* display: flex; */
-  /* margin-left: calc(50% - 55px); */
+  display: flex;
+  margin-left: calc(50% - 55px);
   padding-top: 6px;
-  margin-right: 462px;
 }
 
 footer .social a {
@@ -345,15 +338,14 @@ header.stuck:after {
 
 header nav a {
   transition: box-shadow 200ms linear;
-  box-shadow: 0 0 0 -1px #0097ee inset;
+  box-shadow: 0 0 0 -1px #000 inset;
 }
 
 header nav a:hover,
 header nav a.current,
 header nav a-parent.current {
-  color:#0097ee;
-  background-color: #0097ee;
-  box-shadow: -100px 0 0 #fff inset;
+  background-color: #F04;
+  box-shadow: -100px 0 0 #000 inset;
 }
 
 header .background {
@@ -399,7 +391,7 @@ header .background:after {
 
 
 .cv-projects>li {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   box-shadow: 0 -1px 0 #eee;
 }
 
@@ -459,7 +451,7 @@ ul.unstyled,
   padding-top: 0.5rem;
   display: inline-block;
   float: right;
-  color: #888;
+  color-var (--color-gray-light);
 }
 
 .date-from,
@@ -486,8 +478,8 @@ svg {
 
 .icon {
   width: 1.5rem;
-  height: 1.2rem;
-  fill: #fff;
+  height: 1.5rem;
+  fill: #000;
   vertical-align: middle;
 }
 
